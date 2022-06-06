@@ -1,0 +1,182 @@
+@charset "UTF-8";
+body {
+  width: 1500px;
+  background-color: #000;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+header > h3 {
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
+  text-decoration: underline;
+  text-underline-position: under;
+  -webkit-text-decoration-color: #8c8c8c;
+          text-decoration-color: #8c8c8c;
+}
+
+hr {
+  opacity: 50%;
+}
+
+#menu {
+  text-align: center;
+}
+
+.gnb > li > a {
+  font-size: 12pt;
+  margin: 30px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.gnb > li > a:hover:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+  bottom: 0;
+}
+
+#poster {
+  text-align: center;
+  height: 325px;
+}
+
+main li:nth-of-type(1) {
+  background-image: url("../img2/쥬라기월드.jpg");
+  position: relative;
+  width: 245px;
+  height: 325px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+main li:nth-of-type(2) {
+  background-image: url("../img2/범죄도시2.jpg");
+  position: relative;
+  width: 245px;
+  height: 325px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+main li:nth-of-type(3) {
+  background-image: url("../img2/닥터스트레인지.jpg");
+  position: relative;
+  width: 245px;
+  height: 325px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+main li:nth-of-type(4) {
+  background-image: url("../img2/그대가조국.jpg");
+  position: relative;
+  width: 245px;
+  height: 325px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.imgCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  z-index: 1;
+}
+
+.imgBox:hover + .imgCover {
+  opacity: 1;
+}
+
+.imgBox > a {
+  position: absolute;
+  padding: 20px;
+  font-size: 12pt;
+  display: table;
+  text-align: left;
+  vertical-align: center;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.imgBox:hover > a {
+  opacity: 1;
+}
+
+#content {
+  text-align: center;
+  width: 1500px;
+}
+
+#content > div {
+  display: inline-block;
+  width: auto;
+  margin: 30px;
+  padding: 40px;
+}
+
+#content > div > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.search {
+  position: relative;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  border-style: intset;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background-color: #000;
+  color: white;
+}
+
+button > img {
+  position: absolute;
+  width: 17px;
+  top: 10px;
+  right: 0px;
+  margin: 20px;
+}
+
+button > img {
+  position: absolute;
+  width: 17px;
+  top: 30px;
+  right: 0px;
+  margin: 20px;
+}
+/*# sourceMappingURL=index.css.map */
